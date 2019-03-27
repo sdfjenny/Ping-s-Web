@@ -1,0 +1,23 @@
+
+<section class='my-4 container' id='art-Gallery'>
+  <div class='col-12 text-center'>
+    <h3>相册</h3>
+  </div>
+        <div class='row' id='foto-Gallery'>
+          <div ng-repeat="photo in ArticleCtrl.articleContent[0].sightimages" class='col-lg-3 col-md-4 col-sm-6'><a href='{{photo}}' data-toggle="lightbox" data-gallery='img-gallery'><img ng-src='{{photo}}' class='img-fluid img-thumbnail' alt='{{ArticleCtrl.articleContent[0].title}}'><figcaption class='figure-caption text-center'>{{ArticleCtrl.articleContent[0].title}}</figcaption></a></div>
+          
+        </div>
+
+    </section>
+	
+	
+	
+	<article class='container my-4 pt-4'>
+		<p>{{ArticleCtrl.articleContent[0].frameText}}</p>
+		<h1 class='text-center pt-3'>{{ArticleCtrl.articleContent[0].title}}</h1>
+		<p ng-repeat = "para in ArticleCtrl.articleContent[0].paraText">{{para}}</p>
+	
+	
+	
+	</article>
+	

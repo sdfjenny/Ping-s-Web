@@ -1,0 +1,712 @@
+body{
+  font-size: 16px;
+  color: #333333;
+  background-color:#99CCCC;
+  font-family: 'Oxygen', 'sans-serif', Arial, 宋体, SimSun;
+
+}
+
+#nav-list li.active > a {
+  background-color:#FFFFFF;
+
+
+}
+
+#header-nav{
+  background-color: #CCCCCC;
+  border: 0;
+
+}
+
+#logo-img{
+  background: url('../images/logo-md.PNG') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 10px 10px 0;
+  border-radius: 75px;
+  border: 2px solid #99CC33;
+}
+
+.navbar-brand h1{
+  font-size: 16px;
+  color: #333333;
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.glyph-icon img{
+  width: 16px;
+  height: 16px;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+
+#nav-list a{
+  color: #333333;
+  text-align: center;
+}
+
+#nav-list a:hover {
+  background: #FFFFFF;
+}
+
+.nav-tile {
+  font-size: 1.2em;
+}
+
+form button {
+  color: #333333;
+}
+
+#header-nav button.navbar-toggler, #header-nav button.navbar-toggler span {
+  border: 1px solid #CC0033;
+
+}
+
+#header-nav button.navbar-toggler {
+  clear: both;
+}
+
+/* end of header  */
+
+/* HOME Page  */
+
+
+.container .jumbotron{
+  margin-top: 30px;
+  padding: 0;
+  box-shadow: 0px 0px 50px #336666;
+  border: 2px solid #336666;
+}
+
+.jumbotron{
+  margin-bottom: 0;
+}
+
+h3{
+  color: #333333;
+  font-family: 'Oxygen', sans-serif;
+  text-shadow: 1px 1px 1px;
+}
+
+div #firstslide  {
+  position: absolute;
+  right:auto;
+  left:5%;
+  top: 10%;
+  bottom:auto;
+
+}
+
+div #secondslide  {
+  position: absolute;
+  right:auto;
+  left:8%;
+  top: 10%;
+  bottom:auto;
+
+}
+
+div #thirdslide  {
+  position: absolute;
+  right:auto;
+  left:10%;
+  top: auto;
+  bottom:8%;
+
+}
+
+
+#firstslide p, #secondslide p, #thirdslide p  {
+  text-align: left;
+  color: #333333;
+
+}
+
+
+
+div #phototile {
+  background-color: #CCCCCC;
+  border:2px solid #999999;
+}
+
+#home-tiles {
+  margin-top: 30px;
+  padding-top: 20px;
+  background-color: #CCCCCC;
+  margin-left: 0px;
+  margin-right:0px;
+  box-shadow: 0px 0px 50px #336666;
+  border: 2px solid #336666;
+}
+
+
+
+#serfass, #konstanz, #bhutan{
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #336666;
+  overflow:hidden;
+
+}
+
+#serfass:hover, #konstanz:hover, #bhutan:hover{
+  box-shadow: 0 1px 5px 1px #336666;
+}
+
+#serfass {
+  background: url('../images/Serfass-250.jpg') no-repeat;
+  background-position: center;
+}
+
+#konstanz {
+  background: url('../images/konstanz-250.jpg') no-repeat;
+  background-position: center;
+}
+
+#bhutan {
+  background: url('../images/bhutan-250.jpg') no-repeat;
+  background-position: center;
+}
+
+#serfass span, #konstanz span, #bhutan span {
+  position: absolute;
+  bottom:0;
+  right:0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  background-color: #CCCCCC;
+  color: #333333;
+  opacity: .8;
+}
+
+
+#award {
+  margin-top: 30px;
+  padding-top: 20px;
+  background-color: #CCCCCC;
+  margin-left: 0px;
+  margin-right:0px;
+  box-shadow: 0px 0px 50px #336666;
+  border: 2px solid #336666;
+}
+
+#awardphoto {
+  height:300px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+  border: 2px solid #336666;
+  overflow:hidden;
+  background: url('../images/subway.jpg') no-repeat;
+  background-position: center;
+}
+
+#awardtext span{
+  font-size: 1.2em;
+  text-shadow: 1px 1px 1px;
+  color: #CC0033;
+
+}
+
+/* End of HOME Page */
+
+/* begin of austria Page */
+
+.city-tile {
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+
+}
+
+
+.city-tile span {
+  position: absolute;
+  bottom: 0;
+  right:0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+
+
+}
+
+.city-tile:hover {
+  box-shadow: 0 1px 5px 1px;
+}
+
+#austria-tile + div {
+  margin-bottom: 50px;
+}
+
+/* the next sibling div after austria-tile */
+
+
+/* end of austria Page */
+
+
+/*begin of the content Page*/
+
+.content-tile {
+  margin-bottom: 25px;
+}
+
+.content-tile hr{
+  width: 80%;
+}
+
+.content-tile .content-geo {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+
+}
+
+.content-tile .content-geo span {
+  font-size: .6em;
+}
+
+.content-photo {
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+
+.content-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+
+
+#main-content section {
+  margin-top: 30px;
+}
+
+.content-des {
+  padding-right: 30px;
+}
+
+h3.content-title {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.content-details {
+  font-size: .9em;
+  font-style: italic;
+}
+
+/*end of the content Page*/
+
+/*begin of the Bhutan Page*/
+#art-Gallery {
+  background-color: #CCCCCC;
+  box-shadow: 0px 0px 50px #336666;
+  border: 2px solid #336666;
+
+
+}
+
+.img-thumbnail {
+  padding: 0;
+  background-color:#CCCCCC;
+}
+
+#foto-Gallery div {
+  margin: 0;
+  padding:0;
+  position: relative;
+}
+
+#foto-Gallery div:hover {
+  box-shadow: 0 1px 5px 1px #336666;
+}
+
+#foto-Gallery div figcaption {
+  position: absolute;
+  bottom: 0;
+  right:0;
+  width: 100%;
+  background-color: #CCCCCC;
+  color: #333333;
+  opacity: .8;
+  font-weight: 600;
+}
+
+article {
+  background-color: #FFFFFF;
+  font-size: 17px;
+  color: #333
+
+}
+
+article p {
+
+  margin: 20px;
+  line-height: 200%;
+  padding: 20px;
+}
+
+article p:first-child {
+  padding: 40px;
+  margin: 20px;
+  line-height: 200%;
+  border: 2px solid #CCCCCC;
+  border-radius: 8px;
+  font-weight: bold;
+
+}
+
+article p:first-child::first-letter {
+  font-size: 200%;
+  color: #CC0033;
+
+}
+
+section.in-tet .figure-caption {
+  font-size: 90%;
+  color: #fff;
+  font-weight: 600;
+}
+
+section.in-tet .img-thumbnail {
+  padding: .5rem;
+  border: 2px solid #868e96;
+  border-radius: 0;
+  background-color: #dddddd;
+}
+
+article section {
+  margin: 40px;
+
+}
+
+#next-tile {
+  font-weight: bold;
+  color: #CC0033;
+}
+
+
+
+/*End of the Bhutan Page*/
+
+
+
+
+/* Footer  */
+
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #CCCCCC;
+  border-top: 0;
+
+}
+
+.panel-footer div.row {
+  margin-bottom: 35px;
+}   /* seperate the rows from the copyright */
+
+#email, #wechat, #subscribe, #freindlink {
+  line-height: 1.5;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#contact a{
+  text-decoration: none;
+  color: #333333;
+}
+
+#contact a:hover {
+  font-weight: bold;
+}
+
+#spruch {
+  line-height: 1.5;
+  font-style: italic;
+  color: #CC0033;
+}
+
+#spruch p:nth-child(2) {
+  text-align: right;
+
+}
+
+#linktoother a {
+  color: #333333;
+
+}
+
+#linktoother a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+/* end of the Footer */
+
+
+
+/*********** Extra Large devices only ***********/
+@media (min-width: 1200px){
+
+}
+
+/*********** Large devices only ***********/
+@media (min-width:992px) and (max-width: 1199px) {
+  #logo-img{
+    background: url('../images/logo-sm.PNG') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+    border-radius: 50px;
+    border: 1px solid #99CC33;
+  }
+
+  .nav-tile {
+    font-size: 1em;
+  }
+
+  #nav-list a{
+    color: #333333;
+    text-align: center;
+    width: 90px;
+    border: 2px solid #999999;
+    border-radius: 10px;
+    margin-left: 5px;
+  }
+
+  input.form-control, button.btn {
+    font-size: 0.8em;
+  }
+
+}
+
+/*********** Medium devices only ***********/
+@media (min-width:768px) and (max-width: 991px) {
+  #logo-img{
+    background: url('../images/logo-sm.PNG') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+    border-radius: 50px;
+    border: 1px solid #99CC33;
+  }
+
+  .nav-tile {
+    font-size: 1em;
+  }
+
+  #nav-list a{
+    color: #333333;
+    text-align: center;
+    width: 90px;
+    border: 2px solid #999999;
+    border-radius: 10px;
+    margin-left: 5px;
+  }
+   form {
+     margin-left: 20px;
+
+   }
+
+   input.form-control, button.btn {
+     font-size: 0.8em;
+
+
+   }
+
+   input.form-control {
+     margin-bottom: 10px;
+   }
+}
+
+/*********** Small devices only ***********/
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .nav-tile {
+    font-size: 2.5vw;
+  }
+
+  input.form-control, button.btn {
+    font-size: 2vw;
+
+  }
+
+  h3{
+    font-size: 4vw;
+  }
+
+  #serfass span, #konstanz span, #bhutan span {
+    font-size: 3vw;
+  }
+
+  #recomend-tile h3{
+    text-align: center;
+  }
+
+  #serfass, #konstanz, #bhutan {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  #awardtext {
+    text-align: center;
+  }
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+
+  hr {
+    background-color: black; /* color doesn't work in firefox and Chrome  */
+}
+
+
+.content-photo {
+  margin-right: auto;
+}
+
+.content-tile .content-geo {
+  text-align: center;
+}
+
+.content-des {
+  text-align: center;
+}
+
+
+
+
+}
+
+/*********** Extra small devices only ***********/
+@media (max-width: 575px) {
+  .nav-tile {
+    font-size: 2.5vw;
+  }
+
+  input.form-control, button.btn {
+    font-size: 2vw;
+
+  }
+
+  h3{
+    font-size: 4vw;
+  }
+
+  #serfass span, #konstanz span, #bhutan span {
+    font-size: 3vw;
+  }
+
+  #recomend-tile h3{
+    text-align: center;
+  }
+
+  #serfass, #konstanz, #bhutan {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  #awardtext {
+    text-align: center;
+  }
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+
+  hr {
+    background-color: black; /* color doesn't work in firefox and Chrome  */
+}
+
+}
+
+.content-photo {
+  margin-right: auto;
+}
+
+.content-tile .content-geo {
+  text-align: center;
+}
+
+.content-des {
+  text-align: center;
+}
+
+
+/**** Super extra small devices Only :-) (e.g., iphone 4) *****/
+@media (max-width: 479px) {
+  #recomend-tile h3{
+    text-align: center;
+  }
+
+  #serfass, #konstanz, #bhutan {
+    width: 280px;
+    margin: 0 auto 15px;
+}
+
+#awardtext {
+  text-align: center;
+}
+
+.navbar-brand h1{
+  font-size: 4vw;
+  padding-top: 5px;
+}
+
+h3 {
+  font-size: 4vw;
+}
+
+#serfass span, #konstanz span, #bhutan span {
+  font-size: 3vw;
+}

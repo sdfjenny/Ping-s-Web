@@ -1,0 +1,4 @@
+#99CCCC: green
+#CCCCCC: grey
+#99CC33: orangegreen
+#CC0033: maron
