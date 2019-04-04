@@ -15,7 +15,11 @@
     <script src='js/iconwc.js'></script>
 
   </head>
-  <body ng-app="MyBlogApp">
+  <body ng-app="MyBlogApp" ng-controller="NarrowItDownController as Searcher">
+  
+  <!-- Fixed position loading indicator -->
+    <loading></loading>
+  
     <header>
       <nav id='header-nav' class='navbar navbar-expand-md navbar-light'>
         <div class='container'>
@@ -66,8 +70,8 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="搜索" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索帖子标题</button>
+      <input class="form-control mr-sm-2" type="search" aria-label="Search" ng-model="Searcher.name" >
+      <button ng-click = "Searcher.check(Searcher.name);"  class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索帖子标题</button>
     </form>
   </div>
   <!-- end of navbar-links  -->
@@ -77,6 +81,10 @@
         </div>
       </nav>
     </header>
+	<!-- Search Results -->
+	<found-items-check searcher=Searcher ng-if='Searcher.showthings'></found-items-check>
+	
+	
 <!-- begin of main content  -->
 	<ui-view></ui-view>
     
@@ -131,6 +139,8 @@
 	<!-- Modules -->
 	<script src="js/public Module.js"></script>
 	
+	
+	
 	<!-- router -->
 	<script src="js/routes.js"></script>
 	
@@ -139,9 +149,12 @@
 	
 	<!-- Controller -->
 	<script src="js/register/register-controller.js"></script>
-	<!--<script src="js/GalleryController.js"></script>-->
+	
 	<script src="js/CountryController.js"></script>
 	<script src="js/ArticleController.js"></script>
+	<script src="js/NarrowItDownController.js"></script>
+	
+	
 	
 	
 	

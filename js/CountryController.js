@@ -11,6 +11,7 @@ function CountryController(countryContent){
 	var CountryCtrl = this;
 	CountryCtrl.countryContent = countryContent;
 	
+	
 
 
 }

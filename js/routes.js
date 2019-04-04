@@ -63,10 +63,20 @@ function RoutesConfig ($stateProvider, $urlRouterProvider){
 		 controller: 'ArticleController',
 		 controllerAs: 'ArticleCtrl',
 		 resolve:{
-			 articleContent: ['$stateParams', 'GetJsonService', function($stateParams, GetJsonService){
+			 articleContent: ['$q', '$timeout', '$stateParams', 'GetJsonService', function($q, $timeout, $stateParams, GetJsonService){
+				 var defer = $q.defer();
+				 $timeout(function(){
+					 defer.resolve(GetJsonService.getSightJson($stateParams.category));
+					 
+					 
+				 }, 2000);
+				 
+				 return defer.promise;
 				 
 				 
-				 return GetJsonService.getSightJson($stateParams.category);
+				 
+				 /*console.log(GetJsonService.getSightJson($stateParams.category));
+				 return GetJsonService.getSightJson($stateParams.category);*/
 				 
 			 }]
 		 }
