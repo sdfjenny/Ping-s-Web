@@ -1,10 +1,11 @@
-<div id='main-content' class='container'>
+<div id='search-content' class='container overlay'>
+	 <div  ng-if='searcher.showthings'>
      <h2 id='austria-tile' class='text-center'>精华图文导读</h2>
      <div class='text-center'>如喜欢，就关注。欢迎转发，欢迎置顶，欢迎留言。
      </div>
      <section class='row'>
        <div class='col-lg-3 col-md-4 col-sm-6 col-12' ng-repeat="place in searcher.items">
-         <a ui-sref='sight({category: place[0].name})'>
+         <a ui-sref='sight({category: place[0].name})' >
            <div class='city-tile'>
              <img width='200' height='200' ng-src='{{place[0].sightimages[0]}}' alt='{{place[0].title}}'>
              <span>{{place[0].title}}</span>
@@ -12,5 +13,15 @@
         </a>
        </div>
      </section>
+	 </div>
+	 
+	 <div ng-hide='searcher.showthings'>
+	 <h2 class='text-center'>试试其他关键词吧。</h2>
+	 </div>
 
   </div>
+  
+  
+  
+  
+  

@@ -7,6 +7,8 @@
     <link rel='stylesheet' href='css/bootstrap.min.css'>
     <link rel='stylesheet' href='css/styles.css'>
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+
     <!-- JQUery  -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
 
@@ -55,7 +57,7 @@
           <span class='nav-tile'>足迹</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#awardtext">
+        <a class="nav-link" href="index.html#/#awardtext">
           <span class='glyph-icon si-glyph-champion-cup'>
             <img src="svg/si-glyph-champion-cup.svg"/>
           </span><span class='nav-tile'>
@@ -69,9 +71,11 @@
           联系我</span></a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <form  class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" aria-label="Search" ng-model="Searcher.name" >
-      <button ng-click = "Searcher.check(Searcher.name);"  class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索帖子标题</button>
+      <button ng-click = "Searcher.check(Searcher.name);"  class="btn btn-outline-success my-2 my-sm-0" type="submit">
+	  <span ng-show='Searcher.showthings'><img src="images/ajax-loader.gif"></span>
+	  搜索帖子标题</button>
     </form>
   </div>
   <!-- end of navbar-links  -->
@@ -82,7 +86,7 @@
       </nav>
     </header>
 	<!-- Search Results -->
-	<found-items-check searcher=Searcher ng-if='Searcher.showthings'></found-items-check>
+	<found-items-check searcher=Searcher></found-items-check>
 	
 	
 <!-- begin of main content  -->
@@ -153,6 +157,12 @@
 	<script src="js/CountryController.js"></script>
 	<script src="js/ArticleController.js"></script>
 	<script src="js/NarrowItDownController.js"></script>
+	
+	<!-- begin of lightbox Javascript  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+	<script src="js/lightboxJavascript.js"></script>
+
+	
 	
 	
 	

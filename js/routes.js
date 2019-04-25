@@ -50,6 +50,19 @@ function RoutesConfig ($stateProvider, $urlRouterProvider){
 	 
 	 })
 	 
+	 .state('search',{
+		 url: '/search',
+		 templateUrl: "js/home/searcher-snippet.html",
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+	 })
+	 
+	 
 	 
 	 
 	 
